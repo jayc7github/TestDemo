@@ -1,0 +1,2 @@
+*** Variables ***
+${oRegistrationLink}    xpath: /html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a    # Link on the landing page of the mercury tour website

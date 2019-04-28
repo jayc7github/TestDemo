@@ -1,0 +1,18 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Keywords ***
+the User browses to the Landing Page
+    Open Browser    ${mainURL}    ${browser}
+    Wait Until Page Contains    Mercury    5s
+
+the User clicks the Register link
+    Selenium2Library.Click Element    ${oRegistrationLink}
+    Wait Until Page Contains    Mercury    5s
+
+the registration page opens
+    title should be    ${expectedRegistrationTitle}
+
+search for text
+    [Arguments]    ${stext}
+    Selenium2Library.Click Element    xpath: //*[@id="cse-search-box"]/div/input[4]    ${stext}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190428 19:12:23.572" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
+<suite source="C:\TestDemo\Functional\Robot_Framework_BDD_Selenium\Mercury_Tours_Navigation" id="s1" name="Mercury Tours Navigation">
+<suite source="C:\TestDemo\Functional\Robot_Framework_BDD_Selenium\Mercury_Tours_Navigation\LandingPageSuite.robot" id="s1-s1" name="LandingPageSuite">
+<test id="s1-s1-t1" name="User_navigates_to_registration_page">
+<kw name="GIVEN the User browses to the Landing Page" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${mainURL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190428 19:12:23.948" level="INFO">Opening browser 'Chrome' to base url 'http://newtours.demoaut.com'.</msg>
+<status status="PASS" endtime="20190428 19:12:30.948" starttime="20190428 19:12:23.947"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Mercury</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20190428 19:12:30.977" starttime="20190428 19:12:30.949"></status>
+</kw>
+<status status="PASS" endtime="20190428 19:12:30.977" starttime="20190428 19:12:23.945"></status>
+</kw>
+<kw name="WHEN the User clicks the Register link" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${oRegistrationLink}</arg>
+</arguments>
+<msg timestamp="20190428 19:12:30.980" level="INFO">Clicking element 'xpath: /html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a'.</msg>
+<status status="PASS" endtime="20190428 19:12:31.814" starttime="20190428 19:12:30.979"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Mercury</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20190428 19:12:31.833" starttime="20190428 19:12:31.815"></status>
+</kw>
+<status status="PASS" endtime="20190428 19:12:31.834" starttime="20190428 19:12:30.978"></status>
+</kw>
+<kw name="THEN the registration page opens" library="keywords">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${expectedRegistrationTitle}</arg>
+</arguments>
+<msg timestamp="20190428 19:12:31.842" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
+<status status="PASS" endtime="20190428 19:12:31.843" starttime="20190428 19:12:31.835"></status>
+</kw>
+<status status="PASS" endtime="20190428 19:12:31.844" starttime="20190428 19:12:31.835"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190428 19:12:34.064" starttime="20190428 19:12:31.844"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20190428 19:12:34.065" critical="yes" starttime="20190428 19:12:23.944"></status>
+</test>
+<status status="PASS" endtime="20190428 19:12:34.067" starttime="20190428 19:12:23.694"></status>
+</suite>
+<status status="PASS" endtime="20190428 19:12:34.073" starttime="20190428 19:12:23.614"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Regression</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Mercury Tours Navigation" pass="1">Mercury Tours Navigation</stat>
+<stat fail="0" id="s1-s1" name="LandingPageSuite" pass="1">Mercury Tours Navigation.LandingPageSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

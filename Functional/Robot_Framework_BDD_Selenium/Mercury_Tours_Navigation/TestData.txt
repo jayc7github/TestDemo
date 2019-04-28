@@ -1,0 +1,4 @@
+*** Variables ***
+${mainURL}        http://newtours.demoaut.com
+${expectedRegistrationTitle}    Register: Mercury Tours    # expected title of the registration web page
+${browser}        Chrome    # initial browser to begin test

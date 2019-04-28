@@ -1,0 +1,6 @@
+--outputdir
+c:\users\j\appdata\local\temp\RIDEck08uo.d
+-C
+off
+-W
+81

@@ -1,0 +1,14 @@
+Summary:
+Robot Framework is a python based test automation framework with many possibilities.
+It does help with ATDD in the BDD style tests and the tests are very convenient to read and maintained if the framework is neatly used.
+It is possible to use this framework with different libraries lie selenium, appium custom libraries from python.
+
+With this BDD scenario is scripted in a keyword driven manner.The library used is selenium, hence web application is used. The test data, objects are separated in a structured manner outside the script.
+
+Execution report is available in the "Execution_Report" folder
+Screenshots of the scripts are available in the "Screenshots" folder
+Script, testdats, object etc are available in the "Mercury_Tours_Navigation" folder
+
+
+Author:
+Jayesh
